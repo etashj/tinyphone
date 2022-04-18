@@ -1,0 +1,269 @@
+body{
+    background-color:#008b8b;
+    vertical-align: middle;
+    /*
+    -moz-transform: scale(3);
+    zoom:200%;
+    */
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+span {
+	text-align: center;
+	vertical-align: middle;
+  top : 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);    
+  position:absolute;
+}
+#upvote {
+  position:absolute;
+}
+#app3{
+	position: relative;
+}
+
+#phoneBody{
+    background-color: #000000;
+    margin: auto;
+    width: 188px;
+    height: 350px;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    border-bottom-right-radius: 26px;
+    border-bottom-left-radius: 26px;
+    align-content:center;
+    vertical-align: middle;
+    padding-top:6px;
+
+}
+
+#phoneScreen{
+    background-color:#e6dfdf;
+    margin:auto;
+    width: 176px;
+    height:344px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    align-content:center;
+}
+
+#phoneNotch{
+    background-color: #000000;
+    width: 100px;
+    height: 13px;
+    margin: auto;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#phoneDock{
+    background-color:mediumaquamarine;
+    width: 168px;
+    height:36px;
+    margin: auto;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius:14px;
+    border-bottom-left-radius: 14px;
+    margin-top: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#swipe{
+    background-color: black;
+    width: 88px;
+    height:0.1px;
+    margin: auto;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius:14px;
+    border-bottom-left-radius: 14px;
+    margin-top: 52px;
+    padding-top: 3px;
+    padding-bottom: 1.5px;
+}
+
+
+.app{
+    width:34px;
+    height:34px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    margin-top: 0px;
+    vertical-align: center;
+}
+
+.column1{
+    margin-left:6px;
+}
+.column2{
+    margin-left:46px;
+}
+.column3{
+    margin-left: 86px;
+}
+.column4{
+    margin-left: 126px;
+}
+
+.dockApp{
+    bottom: 34px;
+}
+
+.row1{
+    top:0px
+}
+#row1{
+    background-color:none;
+    width: 168px;
+    height:36px;
+    margin: auto;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius:14px;
+    border-bottom-left-radius: 14px;
+    margin-top: 12px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+#row2{
+    background-color:none;
+    width: 168px;
+    height:36px;
+    margin: auto;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius:14px;
+    border-bottom-left-radius: 14px;
+    margin-top: 2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+#row3{
+    background-color:none;
+    width: 168px;
+    height:36px;
+    margin: auto;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius:14px;
+    border-bottom-left-radius: 14px;
+    margin-top: 2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+#row4{
+    background-color:none;
+    width: 168px;
+    height:136px;
+    margin: auto;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius:14px;
+    border-bottom-left-radius: 14px;
+    margin-top: 2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+#row5{
+    background-color:none;
+    width: 168px;
+    height:36px;
+    margin: auto;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius:14px;
+    border-bottom-left-radius: 14px;
+    margin-top: -100px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+#row6{
+    background-color:none;
+    width: 168px;
+    height:36px;
+    margin: auto;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius:14px;
+    border-bottom-left-radius: 14px;
+    margin-top: 2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+#app6, #app7, #app8, #app10, #app11, #app12, #app14, #app15, #app16, #app18, #app19, #app20, #app22, #app23, #app24, #app26, #app27, #app28{
+    margin-top: -34px;
+}
+
+
+#app1{
+    top: 0px;
+}
+
+#app3{
+    position: relative;
+    bottom: 68px;
+
+}
+#app3::after{
+    border-width:10px; 
+    border-style: solid; 
+
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 1px;
+    top: 0px;
+    bottom: 1px;
+    border: 3px solid rgb(33, 173, 33);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+    width: 28px;
+    height: 28px;
+}
+
+
+#num{
+    display:none;
+    color:white;
+}
+#views{
+    display:none;
+    color: white;
+}
+
+#app4{
+    position: relative;
+    bottom: 102px;
+}
+
+
+img{
+    max-width: 80%;
+    max-height: 80%;
+    margin:10%;
+    opacity:0.65;
+}
+
+#upvote{
+    margin-bottom: 50%;
+}
+
+#time{
+    display: block;
+    position: relative;
+    top: 9px;
+    left: -65px;
+    font-size: 10px;
+}
