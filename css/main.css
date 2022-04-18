@@ -70,7 +70,7 @@ span {
     border-top-right-radius: 14px;
     border-bottom-right-radius:14px;
     border-bottom-left-radius: 14px;
-    margin-top: 15px;
+    margin-top: 13px;
     padding-top: 3px;
     padding-bottom: 3px;
 }
@@ -116,7 +116,7 @@ span {
 }
 
 .dockApp{
-    bottom: 34px;
+    bottom: 33px;
 }
 
 .row1{
@@ -206,12 +206,12 @@ span {
 
 
 #app1{
-    top: 0px;
+    bottom: -1px;
 }
 
 #app3{
     position: relative;
-    bottom: 68px;
+    bottom: 67px;
 
 }
 #app3::after{
@@ -245,7 +245,7 @@ span {
 
 #app4{
     position: relative;
-    bottom: 102px;
+    bottom: 101px;
 }
 
 
