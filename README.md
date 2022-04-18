@@ -1,4 +1,4 @@
-# phone
+# tinyphone
  a partially funtional phone made of css
 
 https://tinyphone.netlify.app
