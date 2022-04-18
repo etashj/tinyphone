@@ -11,6 +11,11 @@ function app(id) {
 		c.style.display='none'
 	}
 
+	if (document.getElementById("inactivityMsg").style.display=="block"){
+	document.getElementById("inactivityMsg").style.display="none"
+	document.getElementById("inactivityMsg2").style.display="block"
+	}
+
 	let x = document.getElementById('swipe');
 	x.style.display='block'
 
@@ -41,6 +46,7 @@ function home() {
 		c.style.display='block'
 	}
 	document.getElementById('time').style.color='black';
+	document.getElementById("inactivityMsg2").style.display="none"
 }
 
 
@@ -61,3 +67,23 @@ function checkTime(i) {
 	if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
 	return i;
 }
+
+let inactivityTime = function () {
+	let time;
+	window.onload = setTimer;
+	document.getElementById("phoneScreen").onclick = resetTimer;
+	function logout() {
+	  console.log("User input not detected; showing message")
+	  document.getElementById("inactivityMsg").style.display="block"
+	}
+	function resetTimer() {
+	  clearTimeout(time);
+	  console.log("User input detected; killing loop")
+	}
+	function setTimer(){
+		startTime()
+		time = setTimeout(logout, 3000)
+	}
+  };
+  inactivityTime();
+  console.log('Waiting for user input...');

@@ -1,5 +1,5 @@
 body{
-    background-color:#008b8b;
+    background-color:#086d6d;
     vertical-align: middle;
     /*
     -moz-transform: scale(3);
@@ -37,10 +37,10 @@ span {
     align-content:center;
     vertical-align: middle;
     padding-top:6px;
-
 }
 
 #phoneScreen{
+    position: relative;
     background-color:#e6dfdf;
     margin:auto;
     width: 176px;
@@ -267,3 +267,48 @@ img{
     left: -65px;
     font-size: 10px;
 }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #inactivityMsg, #inactivityMsg2 {
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: 900;
+    text-decoration: none;
+    color: white;
+    display: block;
+    background-size: 120% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(45deg, 
+                      #FF1361,
+                      #7794ff, 
+                      #ff0000,
+                      #FFF800);
+    animation: 2.5s shake infinite alternate;
+    margin-left: auto;
+    margin-right: auto;
+    top:350px;
+  }
+  
+  @keyframes shake {
+    0% { transform: skewX(-15deg); }
+    5% { transform: skewX(15deg); }
+    10% { transform: skewX(-15deg); }
+    15% { transform: skewX(15deg); }
+    20% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }  
+  }
+  
+  
+  
