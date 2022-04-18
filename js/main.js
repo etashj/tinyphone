@@ -50,6 +50,9 @@ function startTime() {
 	let h = today.getHours();
 	let m = today.getMinutes();
 	m = checkTime(m);
+	if (h>12) {
+		h = h-12
+	}
 	document.getElementById('timeText').innerHTML =  h + ":" + m ;
 	setTimeout(startTime, 1000);
 }
