@@ -1,5 +1,5 @@
 # tinyphone
- a partially funtional phone made of css
+ a ~~partially~~ barely funtional phone made of css
 
 https://tinyphone.netlify.app
 
