@@ -1,4 +1,4 @@
-
+var sharing= false;
 function app(id) {
 	let i = document.getElementById(id);
 	let o = document.getElementById('phoneScreen');
@@ -31,6 +31,8 @@ function app(id) {
 	}
 	if (i.id == "app4"){
 		document.getElementById("sharepic").style.display = "block";
+		document.getElementById("sharetext").style.display = "block";
+		sharing = true;
 	} 
 }
 
@@ -53,8 +55,10 @@ function home() {
 	document.getElementById('time').style.color='black';
 	document.getElementById("inactivityMsg2").style.display="none";
 	document.getElementById("sharepic").style.display = "none";
-	document.getElementById("shareicn").style.animation = "2s spin infinite";
+	document.getElementById("sharetext").style.display = "none";
+	document.getElementById("shareicn").style.animation = "2s spin";
 	document.getElementById("swipe").style.animation="none"
+	sharing=false;
 }
 
 
@@ -108,12 +112,14 @@ const shareData = {
 	url: 'https://tinyphone.netlify.app',
 }
 
-const btn = document.getElementById('sharepic');
+const btn = document.getElementById('phoneScreen');
+const btn2 = document.getElementById('shareicn');
 
 btn.addEventListener('click', async () => {
+	if (sharing==true){
 	try {
 		await navigator.share(shareData)
 	} catch(err) {
 		console.log('Error: ' + err)
-	}
+	}}
 });
