@@ -89,6 +89,12 @@ span {
     padding-bottom: 1.5px;
 }
 
+@keyframes wobble {
+    0% { transform: translate(0px); }
+    33% { transform: translate(-5px); }
+    66% { transform: translate(5px); }
+    100% { transform: translate(0px); }
+  }
 
 .app{
     width:34px;
@@ -301,6 +307,23 @@ img{
     top:350px;
   }
   
+  #app4 {
+      vertical-align: middle;
+      align-items: center;
+  }
+  
+  #shareicn {
+      position: absolute;
+      margin-left: 7px; 
+  }
+  #sharepic{ 
+    position:absolute;
+    left:40px;
+    top:100px;
+    z-index: 1000;
+    animation: 2s spin infinite ;
+  }
+
   @keyframes shake {
     0% { transform: skewX(-15deg); }
     5% { transform: skewX(15deg); }
@@ -309,6 +332,11 @@ img{
     20% { transform: skewX(0deg); }
     100% { transform: skewX(0deg); }  
   }
-  
-  
-  
+  @keyframes spin {
+    15% { transform: rotate(-10deg); }
+    20% { transform: rotate(10deg); }
+    25% { transform: rotate(-10deg); }
+    35% { transform: rotate(10deg); }
+    45% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }  
+  }

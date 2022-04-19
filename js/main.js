@@ -9,6 +9,7 @@ function app(id) {
 	for (var f = 0; f < apps.length; f++) {
 		let c=apps.item(f)
 		c.style.display='none'
+		c.style.animation='none'
 	}
 
 	if (document.getElementById("inactivityMsg").style.display=="block"){
@@ -28,10 +29,14 @@ function app(id) {
 		x.style.backgroundColor='black';
 		document.getElementById('time').style.color='black';
 	}
-
-
-
+	if (i.id == "app4"){
+		document.getElementById("sharepic").style.display = "block";
+	} 
 }
+
+
+
+
 function home() {
 	let o = document.getElementById('phoneScreen');
 	let o2 = document.getElementById('phoneDock');
@@ -46,7 +51,10 @@ function home() {
 		c.style.display='block'
 	}
 	document.getElementById('time').style.color='black';
-	document.getElementById("inactivityMsg2").style.display="none"
+	document.getElementById("inactivityMsg2").style.display="none";
+	document.getElementById("sharepic").style.display = "none";
+	document.getElementById("shareicn").style.animation = "2s spin infinite";
+	document.getElementById("swipe").style.animation="none"
 }
 
 
@@ -75,10 +83,16 @@ let inactivityTime = function () {
 	function logout() {
 	  console.log("User input not detected; showing message")
 	  document.getElementById("inactivityMsg").style.display="block"
+	  let apps = document.getElementsByClassName("app");
+    	for (var f = 0; f < apps.length; f++) {
+		let c=apps.item(f)
+		c.style.animation='5s spin infinite'
+		}
+		document.getElementById("swipe").style.animation="0.2s wobble infinite"
+
 	}
 	function resetTimer() {
 	  clearTimeout(time);
-	  console.log("User input detected; killing loop")
 	}
 	function setTimer(){
 		startTime()
@@ -87,3 +101,19 @@ let inactivityTime = function () {
   };
   inactivityTime();
   console.log('Waiting for user input...');
+
+
+const shareData = {
+	title: 'tinyphone',
+	url: 'https://tinyphone.netlify.app',
+}
+
+const btn = document.getElementById('sharepic');
+
+btn.addEventListener('click', async () => {
+	try {
+		await navigator.share(shareData)
+	} catch(err) {
+		console.log('Error: ' + err)
+	}
+});
