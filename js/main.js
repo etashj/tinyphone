@@ -1,4 +1,5 @@
 var sharing= false;
+
 function app(id) {
 	let i = document.getElementById(id);
 	let o = document.getElementById('phoneScreen');
@@ -90,9 +91,9 @@ let inactivityTime = function () {
 	  let apps = document.getElementsByClassName("app");
     	for (var f = 0; f < apps.length; f++) {
 		let c=apps.item(f)
-		c.style.animation='5s spin infinite'
+		c.style.animation='1s inflate infinite'
 		}
-		document.getElementById("swipe").style.animation="0.2s wobble infinite"
+		document.getElementById("swipe").style.animation="1s inflate infinite"
 
 	}
 	function resetTimer() {

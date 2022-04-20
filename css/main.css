@@ -106,6 +106,7 @@ span {
     position: relative;
     margin-top: 0px;
     vertical-align: center;
+    transition: 0.3s all;
 }
 
 .column1{
@@ -291,10 +292,24 @@ img{
   #app4 {
       text-align: center;
   }
-  
+
   #shareicn {
       opacity: 0.5;
   }
+
+  .app:hover{
+    transform: scale(1.1);
+    transition: 0.3s all;
+  }
+  #swipe:hover{
+    transform: scale(1.1);
+    transition: 0.3s all;
+  }
+  #shareicn:hover{
+    transform: rotate(-3600deg);
+    transition: 2s all;
+  }
+
   .sharebig{ 
     position:absolute;
     left:40px;
@@ -325,4 +340,9 @@ img{
     35% { transform: rotate(10deg); }
     45% { transform: rotate(0deg); }
     100% { transform: rotate(0deg); }  
+  }
+  @keyframes inflate {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      0% { transform: scale(1); }
   }
