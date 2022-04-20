@@ -289,13 +289,10 @@ img{
   }
   
   #app4 {
-      vertical-align: middle;
-      align-items: center;
+      text-align: center;
   }
   
   #shareicn {
-      position: absolute;
-      margin-left: 6.625px; 
       opacity: 0.5;
   }
   .sharebig{ 
