@@ -10,17 +10,15 @@ body{
 }
 
 span {
-	text-align: center;
-	vertical-align: middle;
+    text-align: center;
+    vertical-align: middle;
   top : 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);    
   position:absolute;
 }
-#upvote {
-  position:absolute;
-}
+
 #app3{
 	position: relative;
 }
@@ -89,13 +87,6 @@ span {
     padding-bottom: 1.5px;
 }
 
-@keyframes wobble {
-    0% { transform: translate(0px); }
-    33% { transform: translate(-5px); }
-    66% { transform: translate(5px); }
-    100% { transform: translate(0px); }
-  }
-
 .app{
     width:34px;
     height:34px;
@@ -126,10 +117,7 @@ span {
     bottom: 33px;
 }
 
-.row1{
-    top:0px
-}
-#row1{
+.row{
     background-color:none;
     width: 168px;
     height:36px;
@@ -138,75 +126,24 @@ span {
     border-top-right-radius: 14px;
     border-bottom-right-radius:14px;
     border-bottom-left-radius: 14px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.row:nth-child(1){
+    top:0px;
     margin-top: 12px;
-    padding-top: 3px;
-    padding-bottom: 3px;
 }
-#row2{
-    background-color:none;
-    width: 168px;
-    height:36px;
-    margin: auto;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
-    border-bottom-right-radius:14px;
-    border-bottom-left-radius: 14px;
+.row:nth-child(2), .row:nth-child(3), .row:nth-child(4), .row:nth-child(6){
     margin-top: 2px;
-    padding-top: 3px;
-    padding-bottom: 3px;
 }
-#row3{
-    background-color:none;
-    width: 168px;
-    height:36px;
-    margin: auto;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
-    border-bottom-right-radius:14px;
-    border-bottom-left-radius: 14px;
-    margin-top: 2px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-#row4{
-    background-color:none;
-    width: 168px;
+.row:nth-child(4){
     height:136px;
-    margin: auto;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
-    border-bottom-right-radius:14px;
-    border-bottom-left-radius: 14px;
-    margin-top: 2px;
-    padding-top: 3px;
-    padding-bottom: 3px;
 }
-#row5{
-    background-color:none;
-    width: 168px;
-    height:36px;
-    margin: auto;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
-    border-bottom-right-radius:14px;
-    border-bottom-left-radius: 14px;
+.row:nth-child(5){
     margin-top: -100px;
-    padding-top: 3px;
-    padding-bottom: 3px;
 }
-#row6{
-    background-color:none;
-    width: 168px;
-    height:36px;
-    margin: auto;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
-    border-bottom-right-radius:14px;
-    border-bottom-left-radius: 14px;
-    margin-top: 2px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
+
 #app6, #app7, #app8, #app10, #app11, #app12, #app14, #app15, #app16, #app18, #app19, #app20, #app22, #app23, #app24, #app26, #app27, #app28{
     margin-top: -34px;
 }
@@ -301,6 +238,7 @@ img{
     transform: scale(1.1);
     transition: 0.3s all;
   }
+
   #swipe:hover{
     transform: scale(1.1);
     transition: 0.3s all;
@@ -309,7 +247,6 @@ img{
     transform: rotate(-3600deg);
     transition: 2s all;
   }
-
   .sharebig{ 
     position:absolute;
     left:40px;
@@ -345,4 +282,10 @@ img{
       0% { transform: scale(1); }
       50% { transform: scale(1.1); }
       0% { transform: scale(1); }
+  }
+  @keyframes wobble {
+    0% { transform: translate(0px); }
+    33% { transform: translate(-5px); }
+    66% { transform: translate(5px); }
+    100% { transform: translate(0px); }
   }
