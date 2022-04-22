@@ -126,10 +126,7 @@ span {
     bottom: 33px;
 }
 
-.row1{
-    top:0px
-}
-#row1{
+div.row{
     background-color:none;
     width: 168px;
     height:36px;
@@ -138,74 +135,30 @@ span {
     border-top-right-radius: 14px;
     border-bottom-right-radius:14px;
     border-bottom-left-radius: 14px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+div#row1:nth-child(1){
+    top:0px;
     margin-top: 12px;
-    padding-top: 3px;
-    padding-bottom: 3px;
 }
-#row2{
-    background-color:none;
-    width: 168px;
-    height:36px;
-    margin: auto;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
-    border-bottom-right-radius:14px;
-    border-bottom-left-radius: 14px;
+div#row1:nth-child(2){
     margin-top: 2px;
-    padding-top: 3px;
-    padding-bottom: 3px;
 }
-#row3{
-    background-color:none;
-    width: 168px;
-    height:36px;
-    margin: auto;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
-    border-bottom-right-radius:14px;
-    border-bottom-left-radius: 14px;
+div#row1:nth-child(3){
     margin-top: 2px;
-    padding-top: 3px;
-    padding-bottom: 3px;
 }
-#row4{
-    background-color:none;
-    width: 168px;
+div#row1:nth-child(4){
     height:136px;
-    margin: auto;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
-    border-bottom-right-radius:14px;
-    border-bottom-left-radius: 14px;
     margin-top: 2px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+
 }
-#row5{
-    background-color:none;
-    width: 168px;
-    height:36px;
-    margin: auto;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
-    border-bottom-right-radius:14px;
-    border-bottom-left-radius: 14px;
+div#row1:nth-child(5){
     margin-top: -100px;
-    padding-top: 3px;
-    padding-bottom: 3px;
 }
-#row6{
-    background-color:none;
-    width: 168px;
-    height:36px;
-    margin: auto;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
-    border-bottom-right-radius:14px;
-    border-bottom-left-radius: 14px;
+div#row1:nth-child(6){
     margin-top: 2px;
-    padding-top: 3px;
-    padding-bottom: 3px;
 }
 #app6, #app7, #app8, #app10, #app11, #app12, #app14, #app15, #app16, #app18, #app19, #app20, #app22, #app23, #app24, #app26, #app27, #app28{
     margin-top: -34px;
