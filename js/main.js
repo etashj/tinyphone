@@ -74,8 +74,23 @@ function startTime() {
 	}
 	document.getElementById('timeText').innerHTML =  h + ":" + m ;
 	setTimeout(startTime, 1000);
+	
 }
   
+function go() {
+	var url = "https://netlify-hooks.johnjiromanji.repl.co/tinyphone-view";
+
+	var xhr = new XMLHttpRequest();
+	xhr.open("GET", url);
+
+	xhr.onreadystatechange = function () {
+	if (xhr.readyState === 4) {
+		console.log(xhr.status);
+		console.log(xhr.responseText);
+	}};
+
+	xhr.send();
+}
 function checkTime(i) {
 	if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
 	return i;
@@ -101,6 +116,7 @@ let inactivityTime = function () {
 	}
 	function setTimer(){
 		startTime()
+		go()
 		time = setTimeout(logout, 3000)
 	}
   };
