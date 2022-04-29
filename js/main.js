@@ -125,7 +125,7 @@ let inactivityTime = function () {
 
 const shareData = {
 	title: 'tinyphone',
-	url: 'https://tinyphone.netlify.app',
+	url: 'https://www.tinyphone.tk/',
 }
 
 const btn = document.getElementById('phoneScreen');
