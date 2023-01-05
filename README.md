@@ -7,6 +7,7 @@ https://www.tinyphone.tk/
 
 Click on the apps, then click on the bar at the bottom, that's pretty much it. 
 \
+"That tiny phone is governments in 2030. You can only share propaganda. No apps."
 \
 \
 Credit to [tholman for the Github corners](https://github.com/tholman/github-corners)
